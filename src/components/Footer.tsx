@@ -1,7 +1,8 @@
 import Wordmark from './Wordmark'
+import { CONTACT_EMAIL, CONTACT_MAILTO } from '../contact'
 
 type FooterProps = {
-  setPage: (page: 'home' | 'about') => void
+  setPage: (page: 'home' | 'about' | 'donate') => void
 }
 
 function Footer({ setPage }: FooterProps) {
@@ -11,7 +12,7 @@ function Footer({ setPage }: FooterProps) {
         <Wordmark />
       </a>
       <p>Care for the places that care for us.</p>
-      <a href="mailto:hello@saveearth.org">josephmiclat@saveearth.org</a>
+      <a href={CONTACT_MAILTO}>{CONTACT_EMAIL}</a>
       <span className="footer-note">© 2026 SaveEarth · Made for a living planet</span>
     </footer>
   )

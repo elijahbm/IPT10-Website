@@ -2,14 +2,15 @@ import { useState } from 'react'
 import Wordmark from './Wordmark'
 
 type HeaderProps = {
-  page: 'home' | 'about'
-  setPage: (page: 'home' | 'about') => void
+  // 'involved' has no nav tab of its own; the type just keeps this prop in sync with the router.
+  page: 'home' | 'about' | 'donate' | 'involved'
+  setPage: (page: 'home' | 'about' | 'donate') => void
 }
 
 function Header({ page, setPage }: HeaderProps) {
   const [menuOpen, setMenuOpen] = useState(false)
 
-  function navigate(nextPage: 'home' | 'about') {
+  function navigate(nextPage: 'home' | 'about' | 'donate') {
     setPage(nextPage)
     setMenuOpen(false)
     window.scrollTo({ top: 0, behavior: 'smooth' })
@@ -32,7 +33,7 @@ function Header({ page, setPage }: HeaderProps) {
       <nav className={`primary-nav${menuOpen ? ' is-open' : ''}`} aria-label="Main navigation">
         <button className={page === 'home' ? 'nav-link is-active' : 'nav-link'} type="button" onClick={() => navigate('home')}>Home</button>
         <button className={page === 'about' ? 'nav-link is-active' : 'nav-link'} type="button" onClick={() => navigate('about')}>About</button>
-        <a className="nav-donate" href="mailto:hello@saveearth.org?subject=I%20want%20to%20support%20SaveEarth">Support our work <span aria-hidden="true">↗</span></a>
+        <a className="nav-donate" href="#support" onClick={(event) => { event.preventDefault(); navigate('donate') }}>Support our work <span aria-hidden="true">↗</span></a>
       </nav>
     </header>
   )

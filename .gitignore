@@ -1,0 +1,30 @@
+node_modules
+dist
+dist-ssr
+*.local
+
+# Secrets: publishable + secret keys live here.
+.env
+.env.*
+!.env.example
+
+# Volunteer signups are personal data - never commit them.
+server/volunteers.json
+
+# Contact messages are personal data too.
+server/messages.json
+
+# Editor / OS noise
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
