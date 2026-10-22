@@ -27,11 +27,6 @@ Then start both the site and the payment server:
 npm run dev
 ```
 
-| Process | URL |
-| --- | --- |
-| Vite site | <http://localhost:5173> |
-| Payment server | <http://127.0.0.1:4242> |
-
 Vite proxies `/api/*` to the payment server, so the browser only ever talks to one origin.
 
 ### Testing a payment
