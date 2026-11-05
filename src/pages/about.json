@@ -1,0 +1,36 @@
+{
+  "hero": {
+    "eyebrow": "A note from our founder",
+    "greeting": "Hi, I’m",
+    "name": "Joseph Elijah Miclat",
+    "lede": "A 20-year old environmentalist and 3rd-year college student from Angeles University Foundation with a passion for sustainable living and community engagement. I believe caring for the Earth should feel less like a distant ideal and more like something we do together, right where we live.",
+    "portraitAlt": "A person tending a community garden",
+    "portraitCaption": "Joseph Elijah Miclat · Founder, SaveEarth"
+  },
+  "story": {
+    "number": "01",
+    "eyebrow": "The story so far",
+    "titleLines": ["A small idea", "with deep roots."],
+    "paragraphs": [
+      "SaveEarth started with a simple question: what if protecting the planet began with the places right outside our doors?",
+      "That question grew into a community of people who care about clean air, thriving habitats, and a future where nature and people can flourish side by side. We bring local hands and hopeful hearts to practical, lasting work."
+    ],
+    "personalNote": "Due to the widely spread of pollution all over the world, I came up with the idea of creating a solution that can solve and benefit our mother earth. Here in SaveEarth, I do believe that we can make a change and it is never too late to take an action."
+  },
+  "values": {
+    "eyebrow": "What keeps me going",
+    "titleLines": ["Good work is"],
+    "titleEmphasis": "shared work.",
+    "items": [
+      { "number": "01", "text": "Start with the community already there." },
+      { "number": "02", "text": "Make room for everyone to take part." },
+      { "number": "03", "text": "Leave every place better than we found it." }
+    ]
+  },
+  "cta": {
+    "eyebrow": "Come say hello",
+    "titleLines": ["Let’s make something", "good happen."],
+    "buttonLabel": "Write to me",
+    "email": "hello@saveearth.org"
+  }
+}
