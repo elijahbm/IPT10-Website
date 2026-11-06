@@ -22,42 +22,42 @@ export const stripePromise: Promise<Stripe | null> | null = publishableKey ? loa
 export const stripeAppearance: Appearance = {
   theme: 'stripe',
   variables: {
-    colorPrimary: '#193c2c',
-    colorText: '#1b2b20',
-    colorTextSecondary: '#697469',
-    colorTextPlaceholder: '#a3ada2',
+    colorPrimary: '#09251c',
+    colorText: '#09251c',
+    colorTextSecondary: '#4a625a',
+    colorTextPlaceholder: '#8a9c96',
     colorBackground: '#ffffff',
     colorDanger: '#a3421d',
     fontFamily: "'DM Sans', 'Segoe UI', sans-serif",
     fontSizeBase: '13px',
-    borderRadius: '0px',
+    borderRadius: '8px',
     spacingUnit: '4px',
   },
   rules: {
     '.Input': {
-      border: '1px solid #dce0d5',
+      border: '1px solid #d9e6ee',
       boxShadow: 'none',
       padding: '13px 14px',
     },
     '.Input:focus': {
-      border: '1px solid #193c2c',
+      border: '1px solid #09251c',
       boxShadow: 'none',
       outline: 'none',
     },
     '.Label': {
-      color: '#697469',
+      color: '#4a625a',
       fontSize: '10px',
       fontWeight: '700',
       letterSpacing: '0.12em',
       textTransform: 'uppercase',
     },
     '.Tab': {
-      border: '1px solid #dce0d5',
+      border: '1px solid #d9e6ee',
       boxShadow: 'none',
     },
     '.Tab--selected': {
-      border: '1px solid #193c2c',
-      backgroundColor: '#ecf3d0',
+      border: '1px solid #09251c',
+      backgroundColor: '#fff3bf',
     },
   },
 }

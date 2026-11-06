@@ -111,15 +111,18 @@ code {
 }
 
 :root {
-  --forest: #193c2c;
-  --forest-deep: #142d22;
-  --leaf: #d9ec79;
-  --leaf-soft: #ecf3d0;
-  --paper: #f8f7f1;
-  --ink: #1b2b20;
-  --muted: #697469;
-  --rust: #ce7148;
-  --line: #dce0d5;
+  /* Brand palette */
+  --forest: #09251c;
+  --forest-deep: #09251c;
+  --leaf: #ffd51e; /* yellow: primary buttons + highlights */
+  --leaf-soft: #fff3bf; /* soft yellow tint for selected states */
+  --blue: #76c0ec; /* light blue: secondary accent */
+  --mist: #eaf5fc; /* soft blue tint for alternate sections */
+  --paper: #fff;
+  --ink: #09251c;
+  --muted: #4a625a;
+  --rust: var(--blue);
+  --line: #d9e6ee;
   color-scheme: light;
   font-family: 'DM Sans', 'Segoe UI', sans-serif;
   color: var(--ink);
